@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Static website hosted using Amazon S3 and CloudFront"
+    >
+
+    <title>AWS Static Website Project</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="logo">AWS</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">AWS PROJECT 01</p>
+
+            <h1>Static Website Hosting on AWS</h1>
+
+            <p class="hero-description">
+                A secure static website stored in Amazon S3 and delivered
+                globally using Amazon CloudFront.
+            </p>
+
+            <div class="button-group">
+                <a href="#architecture" class="button primary">
+                    View Architecture
+                </a>
+
+                <a
+                    href="https://github.com/swaralichine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button secondary"
+                >
+                    View GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <p class="section-label">PROJECT OVERVIEW</p>
+
+            <h2>What this project demonstrates</h2>
+
+            <p class="section-description">
+                This project demonstrates how to host a static website using
+                Amazon S3 while using Amazon CloudFront for secure HTTPS
+                delivery, caching, and improved global performance.
+            </p>
+        </section>
+
+        <section id="architecture" class="section alternate">
+            <p class="section-label">ARCHITECTURE</p>
+
+            <h2>How the request flows</h2>
+
+            <div class="architecture-flow">
+                <div class="architecture-box">
+                    <span>1</span>
+                    <h3>User</h3>
+                    <p>Opens the website in a browser</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="architecture-box">
+                    <span>2</span>
+                    <h3>CloudFront</h3>
+                    <p>Serves cached website content over HTTPS</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="architecture-box">
+                    <span>3</span>
+                    <h3>Amazon S3</h3>
+                    <p>Stores the HTML, CSS, and JavaScript files</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <p class="section-label">AWS SERVICES</p>
+
+            <h2>Services used in this project</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Amazon S3</h3>
+
+                    <p>
+                        Stores the website files, including HTML, CSS,
+                        JavaScript, and images.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Amazon CloudFront</h3>
+
+                    <p>
+                        Delivers the website through a global content delivery
+                        network with HTTPS and caching.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Origin Access Control</h3>
+
+                    <p>
+                        Allows CloudFront to access the private S3 bucket
+                        without exposing the bucket directly to the internet.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section alternate">
+            <p class="section-label">PROJECT GOALS</p>
+
+            <h2>What I will complete</h2>
+
+            <div class="checklist">
+                <div>✓ Create a responsive static website</div>
+                <div>✓ Store website files in Amazon S3</div>
+                <div>✓ Keep the S3 bucket private</div>
+                <div>✓ Configure CloudFront Origin Access Control</div>
+                <div>✓ Deliver the website using HTTPS</div>
+                <div>✓ Configure a custom error page</div>
+                <div>✓ Document cost and cleanup steps</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <p class="section-label">AUTHOR</p>
+
+            <h2>Swarali Chine</h2>
+
+            <p class="section-description">
+                Senior Technical Support Engineer focused on AWS, cloud
+                storage, security, automation, and generative AI.
+            </p>
+
+            <div class="button-group centered">
+                <a
+                    href="https://github.com/swaralichine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button primary"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://swaralichine.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button secondary"
+                >
+                    Portfolio
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="current-year"></span> Swarali Chine.
+            Hosted on AWS.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
