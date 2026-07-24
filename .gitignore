@@ -1,22 +1,31 @@
+cat > .gitignore <<'EOF'
 .DS_Store
-.env
-.env.*
-*.pem
-*.key
-*.p12
-*.log
 
-.vscode/
-.idea/
-
-__pycache__/
+# Python
 .venv/
 venv/
+__pycache__/
+*.pyc
 
+# Environment files
+.env
+.env.*
+
+# Node
 node_modules/
 dist/
 build/
 
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
+EOF
