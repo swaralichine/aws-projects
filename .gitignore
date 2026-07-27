@@ -28,4 +28,4 @@ build/
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
-EOF
+EOF.DS_Store
