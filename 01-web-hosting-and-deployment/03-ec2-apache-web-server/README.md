@@ -157,7 +157,7 @@ curl -I http://localhost
 
 ### EC2 Instance
 
-![EC2](screenshots/01-ec2-instance.png)
+![EC2](screenshots/01-ec2-running.png)
 
 ---
 
