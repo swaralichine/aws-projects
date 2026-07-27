@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EC2 Apache Web Server</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .card {
+            max-width: 850px;
+            width: 100%;
+            padding: 50px;
+            border-radius: 24px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        .label {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-bottom: 18px;
+            border-radius: 999px;
+            background: #ff9900;
+            color: #111827;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: 2.8rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #dbeafe;
+            line-height: 1.7;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .service {
+            padding: 22px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .service h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #bfdbfe;
+        }
+
+        @media (max-width: 700px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <div class="label">AWS Portfolio Project 3</div>
+
+        <h1>Apache Web Server on Amazon EC2</h1>
+
+        <p class="subtitle">
+            A custom website hosted on an Amazon Linux 2023 EC2 instance
+            using the Apache HTTP Server.
+        </p>
+
+        <section class="services">
+            <div class="service">
+                <h3>Amazon EC2</h3>
+                <p>Provides the virtual server running in AWS.</p>
+            </div>
+
+            <div class="service">
+                <h3>Amazon Linux 2023</h3>
+                <p>Provides the operating system for the instance.</p>
+            </div>
+
+            <div class="service">
+                <h3>Apache HTTP Server</h3>
+                <p>Serves this HTML page over port 80.</p>
+            </div>
+        </section>
+
+        <footer>
+            Built and hosted by Swarali Chine
+        </footer>
+    </main>
+</body>
+</html>
