@@ -30,3 +30,4 @@ build/
 .terraform.lock.hcl
 EOF.DS_Store
 .DS_Store
+.DS_Store
