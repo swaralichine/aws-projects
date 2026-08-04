@@ -114,12 +114,3 @@ npm run preview
 - Host secure web applications on AWS
 
 ---
-
-## Future Improvements
-
-- Authentication with Amazon Cognito
-- Backend API using AWS Lambda
-- DynamoDB integration
-- Push Notifications
-- Custom Domain
-- CloudFront Analytics
