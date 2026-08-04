@@ -1,16 +1,40 @@
-
 # Cost Estimate
 
-This project uses AWS Amplify Hosting for a small static Progressive Web App.
+## AWS Services Used
 
-Expected costs are minimal for a portfolio demonstration and may remain within the AWS Free Tier, depending on account eligibility and usage.
+| Service | Purpose | Estimated Cost |
+|----------|----------|----------------|
+| AWS Amplify Hosting | Host React PWA | Free Tier / Minimal |
 
-Potential billable areas:
+---
 
-- Build minutes
-- Data storage
-- Data transfer
-- Request volume
+## Monthly Cost
 
-Delete the Amplify application after testing if ongoing hosting is not required.
-EOF
+For a personal portfolio project:
+
+| Resource | Cost |
+|----------|------|
+| Build Minutes | Usually Free Tier |
+| Storage | Negligible |
+| Data Transfer | Negligible |
+
+Estimated Monthly Cost:
+
+**$0 – $2 USD**
+
+---
+
+## Cost Optimization
+
+- Delete unused Amplify applications
+- Avoid unnecessary builds
+- Use GitHub efficiently
+- Remove unused branches
+
+---
+
+## Portfolio Recommendation
+
+Keep one deployed version for demonstration purposes.
+
+Delete old test deployments to avoid unnecessary charges.
