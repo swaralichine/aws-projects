@@ -3,8 +3,8 @@ import './App.css'
 
 const initialTasks = [
   { id: 1, title: 'Learn AWS Amplify', completed: true },
-  { id: 2, title: 'Deploy the React application', completed: false },
-  { id: 3, title: 'Enable offline support', completed: false },
+  { id: 2, title: 'Deploy the React application', completed: true },
+  { id: 3, title: 'Enable offline support', completed: true },
 ]
 
 function App() {
@@ -16,9 +16,7 @@ function App() {
 
     const title = newTask.trim()
 
-    if (!title) {
-      return
-    }
+    if (!title) return
 
     setTasks((currentTasks) => [
       ...currentTasks,
@@ -53,10 +51,13 @@ function App() {
           </div>
 
           <div>
-            <p className="eyebrow">AWS AMPLIFY PWA</p>
+            <p className="eyebrow">DEPLOYED WITH AWS AMPLIFY 🚀</p>
+
             <h1>Cloud Task Manager</h1>
+
             <p className="subtitle">
-              A lightweight Progressive Web App hosted with AWS Amplify.
+              Progressive Web App automatically deployed using GitHub CI/CD and
+              AWS Amplify Hosting.
             </p>
           </div>
         </header>
@@ -64,6 +65,7 @@ function App() {
         <section className="progress-panel">
           <div>
             <span>Project progress</span>
+
             <strong>
               {completedCount} of {tasks.length} complete
             </strong>
@@ -73,14 +75,20 @@ function App() {
             <div
               className="progress-bar"
               style={{
-                width: `${tasks.length ? (completedCount / tasks.length) * 100 : 0}%`,
+                width: `${
+                  tasks.length
+                    ? (completedCount / tasks.length) * 100
+                    : 0
+                }%`,
               }}
             />
           </div>
         </section>
 
         <form className="task-form" onSubmit={addTask}>
-          <label htmlFor="task-input">Add a new cloud task</label>
+          <label htmlFor="task-input">
+            Add a new cloud deployment task
+          </label>
 
           <div className="form-row">
             <input
@@ -88,7 +96,7 @@ function App() {
               type="text"
               value={newTask}
               onChange={(event) => setNewTask(event.target.value)}
-              placeholder="For example: Test offline mode"
+              placeholder="Example: Configure custom domain"
               maxLength={100}
             />
 
@@ -116,7 +124,10 @@ function App() {
                   />
 
                   <span className="checkmark" aria-hidden="true" />
-                  <span className="task-title">{task.title}</span>
+
+                  <span className="task-title">
+                    {task.title}
+                  </span>
                 </label>
 
                 <span className="status">
@@ -130,7 +141,8 @@ function App() {
         <footer>
           <span>React + Vite</span>
           <span>AWS Amplify</span>
-          <span>Offline-ready PWA</span>
+          <span>PWA</span>
+          <span>GitHub CI/CD</span>
         </footer>
       </section>
     </main>
