@@ -73,7 +73,7 @@ function App() {
 
           <span>
             <strong>Cloud Travel Journal</strong>
-            <small>Stories delivered from the cloud</small>
+            <small>Stories delivered globally from the cloud</small>
           </span>
         </a>
 
