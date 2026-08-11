@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# AWS credentials / secrets
+.env
+.aws/
+credentials
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
